@@ -19,6 +19,7 @@ def _get_github_auth_responders():
     return [username_responder, password_responder]
 
 
+@task()
 def deploy(c):
     supervisor_conf_path = '~/etc/'
     supervisor_program_name = 'Blog_study'
