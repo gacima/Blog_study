@@ -57,6 +57,7 @@
 
 
 
+
     </style>
 </head>
 
@@ -99,13 +100,13 @@
         </div>
     </header>
     {% if messages %}
-        {% for message in messages %}
-            <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                     aria-hidden="true">&times;</span></button>
-                {{ message }}
-            </div>
-        {% endfor %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        {{ message }}
+    </div>
+    {% endfor %}
     {% endif %}
 </div>
 <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
@@ -137,11 +138,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p class="copyright">&copy 2017 - 采集自<a href="http://www.cssmoban.com/"
-                                                        target="_blank" title="模板之家">模板之家</a>
-                    - 由<a href="http://zmrenwu.com/" title="网页模板" target="_blank">追梦人物的博客</a>修改
-                </p>
+                <p class="copyright">&copy 2020 - 2021 我的学习小站</p>
             </div>
+        </div>
+        <div class="flex-center">
+            <div style="text-align:center"><a href="http://www.miitbeian.gov.cn" target="_blank">宁ICP备20000240号-1</a></div>
         </div>
     </div>
 </footer>
@@ -165,6 +166,7 @@
 <script>
     hljs.initHighlightingOnLoad();
     hljs.initLineNumbersOnLoad();
+
 
 </script>
 </body>
